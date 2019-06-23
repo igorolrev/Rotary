@@ -12,10 +12,13 @@ class DancersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = ColourManager.background
+        
         navigationItem.title = "Dancers"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.font: FontManager.navigationBarLargeTitle, .foregroundColor: ColourManager.text]
+        
         let optionSelectorWheelView: OptionSelectorWheelView = OptionSelectorWheelView.load()
         optionSelectorWheelView.wheelControl.rotationEnded = { [unowned self] dancer in
             self.label.attributedText = NSMutableAttributedString(string: "").normal("The current selection is ").bold(dancer.name).copy() as? NSAttributedString

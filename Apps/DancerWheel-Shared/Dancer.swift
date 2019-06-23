@@ -6,12 +6,6 @@ struct Dancer: WheelOption {
     let style: Genre
 }
 
-extension Dancer: Equatable {
-    static func == (lhs: Dancer, rhs: Dancer) -> Bool {
-        return lhs.name == rhs.name
-    }
-}
-
 extension Dancer: CustomStringConvertible {
     var description: String {
         return name

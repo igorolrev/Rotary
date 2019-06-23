@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol WheelOption: Equatable {
+public protocol WheelOption {
     var wheelOptionTitle: String { get }
 }
 

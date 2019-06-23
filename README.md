@@ -16,13 +16,10 @@
 ```swift
 import Rotary
 
-struct Dancer: Equatable, WheelOption {
+struct Dancer: WheelOption {
     let name: String
     var wheelOptionTitle: String {
         return name
-    }
-    static func ==(lhs: Dancer, rhs: Dancer) -> Bool {
-        return lhs.name == rhs.name
     }
 }
 
@@ -49,3 +46,13 @@ view.addSubview(wheelControl)
 ```
 
 The closure 'rotationEnded' is called immediately after layout. If you do not want this behaviour, call layout before you assign the closure.
+
+# Demo
+
+Tap the following image to launch [Appetize](https://appetize.io).
+
+<p align="center">
+    <a href="">
+        <img src="https://user-images.githubusercontent.com/51816980/59976306-660b8f00-95ba-11e9-89d6-1862f6ee78da.png" alt="Preview"/>
+    </a>
+</p>
