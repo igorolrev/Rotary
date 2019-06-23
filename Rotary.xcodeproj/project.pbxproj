@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500F19C01FE6901800C43834 /* RotaryWheelTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19B81FE6901700C43834 /* RotaryWheelTrack.swift */; };
+		500F19C11FE6901800C43834 /* RotaryWheelStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19B91FE6901700C43834 /* RotaryWheelStyling.swift */; };
+		500F19C21FE6901800C43834 /* CGPoint+Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BA1FE6901700C43834 /* CGPoint+Trigonometry.swift */; };
+		500F19C31FE6901800C43834 /* RotaryWheelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BB1FE6901700C43834 /* RotaryWheelControl.swift */; };
+		500F19C41FE6901800C43834 /* UIView+Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BC1FE6901700C43834 /* UIView+Trigonometry.swift */; };
+		500F19C51FE6901800C43834 /* WheelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BD1FE6901700C43834 /* WheelOption.swift */; };
+		500F19C61FE6901800C43834 /* RotaryWheelSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BE1FE6901700C43834 /* RotaryWheelSector.swift */; };
+		500F19C71FE6901800C43834 /* RotaryWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BF1FE6901700C43834 /* RotaryWheelView.swift */; };
+		50A515BE1FEBF180007741CB /* CGPoint+Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BA1FE6901700C43834 /* CGPoint+Trigonometry.swift */; };
+		50A515BF1FEBF180007741CB /* RotaryWheelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BB1FE6901700C43834 /* RotaryWheelControl.swift */; };
+		50A515C01FEBF180007741CB /* RotaryWheelSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BE1FE6901700C43834 /* RotaryWheelSector.swift */; };
+		50A515C11FEBF180007741CB /* RotaryWheelStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19B91FE6901700C43834 /* RotaryWheelStyling.swift */; };
+		50A515C21FEBF180007741CB /* RotaryWheelTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19B81FE6901700C43834 /* RotaryWheelTrack.swift */; };
+		50A515C31FEBF180007741CB /* RotaryWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BF1FE6901700C43834 /* RotaryWheelView.swift */; };
+		50A515C41FEBF180007741CB /* UIView+Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BC1FE6901700C43834 /* UIView+Trigonometry.swift */; };
+		50A515C51FEBF180007741CB /* WheelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F19BD1FE6901700C43834 /* WheelOption.swift */; };
+		50A5F88320E7976D00F70B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F87820E7975700F70B1C /* AppDelegate.swift */; };
+		50A5F88420E7976D00F70B1C /* DancersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F87920E7975700F70B1C /* DancersViewController.swift */; };
+		50A5F88520E7976D00F70B1C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F87A20E7975700F70B1C /* NavigationController.swift */; };
+		50A5F88620E7977300F70B1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F87420E7975700F70B1C /* LaunchScreen.storyboard */; };
+		50A5F88720E7977700F70B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F87620E7975700F70B1C /* Main.storyboard */; };
+		50A5F88820E7977C00F70B1C /* OptionSelectorWheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F86C20E7975700F70B1C /* OptionSelectorWheelView.xib */; };
+		50A5F88920E7977C00F70B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F86D20E7975700F70B1C /* Assets.xcassets */; };
+		50A5F88A20E7978F00F70B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F88020E7975700F70B1C /* AppDelegate.swift */; };
+		50A5F88B20E7978F00F70B1C /* DancersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F88120E7975700F70B1C /* DancersViewController.swift */; };
+		50A5F88C20E7979200F70B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F87E20E7975700F70B1C /* Main.storyboard */; };
+		50A5F88D20E7979500F70B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F87D20E7975700F70B1C /* Assets.xcassets */; };
+		50A5F88E20E7979B00F70B1C /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86620E7975700F70B1C /* FontManager.swift */; };
+		50A5F88F20E7979B00F70B1C /* NSMutableAttributedString+CustomStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86720E7975700F70B1C /* NSMutableAttributedString+CustomStyling.swift */; };
+		50A5F89020E7979B00F70B1C /* OptionSelectorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86820E7975700F70B1C /* OptionSelectorWheelView.swift */; };
+		50A5F89120E7979B00F70B1C /* ColourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86920E7975700F70B1C /* ColourManager.swift */; };
+		50A5F89220E7979B00F70B1C /* Dancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86A20E7975700F70B1C /* Dancer.swift */; };
+		50A5F89320E7979B00F70B1C /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86620E7975700F70B1C /* FontManager.swift */; };
+		50A5F89420E7979B00F70B1C /* NSMutableAttributedString+CustomStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86720E7975700F70B1C /* NSMutableAttributedString+CustomStyling.swift */; };
+		50A5F89520E7979B00F70B1C /* OptionSelectorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86820E7975700F70B1C /* OptionSelectorWheelView.swift */; };
+		50A5F89620E7979B00F70B1C /* ColourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86920E7975700F70B1C /* ColourManager.swift */; };
+		50A5F89720E7979B00F70B1C /* Dancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5F86A20E7975700F70B1C /* Dancer.swift */; };
+		50A5F89820E797B600F70B1C /* Rotary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500F19AD1FE68FCE00C43834 /* Rotary.framework */; };
+		50A5F89920E797B600F70B1C /* Rotary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 500F19AD1FE68FCE00C43834 /* Rotary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50A5F89D20E797BB00F70B1C /* Rotary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C6CA21FEBD0C4009A074B /* Rotary.framework */; };
+		50A5F89E20E797BB00F70B1C /* Rotary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 500C6CA21FEBD0C4009A074B /* Rotary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50A5F89A20E797B600F70B1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 500F19A41FE68FCE00C43834 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500F19AC1FE68FCE00C43834;
+			remoteInfo = "Rotary-iOS";
+		};
+		50A5F89F20E797BB00F70B1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 500F19A41FE68FCE00C43834 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500C6CA11FEBD0C4009A074B;
+			remoteInfo = "Rotary-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50A5F89C20E797B600F70B1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50A5F89920E797B600F70B1C /* Rotary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F8A120E797BB00F70B1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50A5F89E20E797BB00F70B1C /* Rotary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		500C6CA21FEBD0C4009A074B /* Rotary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rotary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500C6CA51FEBD0C4009A074B /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		500F19AD1FE68FCE00C43834 /* Rotary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rotary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F19B11FE68FCE00C43834 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		500F19B81FE6901700C43834 /* RotaryWheelTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaryWheelTrack.swift; sourceTree = "<group>"; };
+		500F19B91FE6901700C43834 /* RotaryWheelStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaryWheelStyling.swift; sourceTree = "<group>"; };
+		500F19BA1FE6901700C43834 /* CGPoint+Trigonometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Trigonometry.swift"; sourceTree = "<group>"; };
+		500F19BB1FE6901700C43834 /* RotaryWheelControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaryWheelControl.swift; sourceTree = "<group>"; };
+		500F19BC1FE6901700C43834 /* UIView+Trigonometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Trigonometry.swift"; sourceTree = "<group>"; };
+		500F19BD1FE6901700C43834 /* WheelOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelOption.swift; sourceTree = "<group>"; };
+		500F19BE1FE6901700C43834 /* RotaryWheelSector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaryWheelSector.swift; sourceTree = "<group>"; };
+		500F19BF1FE6901700C43834 /* RotaryWheelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaryWheelView.swift; sourceTree = "<group>"; };
+		50A5F83B20E796A100F70B1C /* DancerWheel-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DancerWheel-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A5F85120E796B800F70B1C /* DancerWheel-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DancerWheel-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A5F86620E7975700F70B1C /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		50A5F86720E7975700F70B1C /* NSMutableAttributedString+CustomStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+CustomStyling.swift"; sourceTree = "<group>"; };
+		50A5F86820E7975700F70B1C /* OptionSelectorWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectorWheelView.swift; sourceTree = "<group>"; };
+		50A5F86920E7975700F70B1C /* ColourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourManager.swift; sourceTree = "<group>"; };
+		50A5F86A20E7975700F70B1C /* Dancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dancer.swift; sourceTree = "<group>"; };
+		50A5F86C20E7975700F70B1C /* OptionSelectorWheelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionSelectorWheelView.xib; sourceTree = "<group>"; };
+		50A5F86D20E7975700F70B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50A5F87520E7975700F70B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50A5F87720E7975700F70B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50A5F87820E7975700F70B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50A5F87920E7975700F70B1C /* DancersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancersViewController.swift; sourceTree = "<group>"; };
+		50A5F87A20E7975700F70B1C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		50A5F87B20E7975700F70B1C /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		50A5F87D20E7975700F70B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50A5F87F20E7975700F70B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50A5F88020E7975700F70B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50A5F88120E7975700F70B1C /* DancersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancersViewController.swift; sourceTree = "<group>"; };
+		50A5F88220E7975700F70B1C /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500C6C9E1FEBD0C4009A074B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F19A91FE68FCE00C43834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F83820E796A100F70B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F89820E797B600F70B1C /* Rotary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F84E20E796B800F70B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F89D20E797BB00F70B1C /* Rotary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500F19A31FE68FCE00C43834 = {
+			isa = PBXGroup;
+			children = (
+				500F19AF1FE68FCE00C43834 /* Rotary */,
+				50A5F8A220E7980800F70B1C /* Apps */,
+				500F19AE1FE68FCE00C43834 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		500F19AE1FE68FCE00C43834 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				500F19AD1FE68FCE00C43834 /* Rotary.framework */,
+				500C6CA21FEBD0C4009A074B /* Rotary.framework */,
+				50A5F83B20E796A100F70B1C /* DancerWheel-iOS.app */,
+				50A5F85120E796B800F70B1C /* DancerWheel-tvOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500F19AF1FE68FCE00C43834 /* Rotary */ = {
+			isa = PBXGroup;
+			children = (
+				500F19BA1FE6901700C43834 /* CGPoint+Trigonometry.swift */,
+				500F19BB1FE6901700C43834 /* RotaryWheelControl.swift */,
+				500F19BE1FE6901700C43834 /* RotaryWheelSector.swift */,
+				500F19B91FE6901700C43834 /* RotaryWheelStyling.swift */,
+				500F19B81FE6901700C43834 /* RotaryWheelTrack.swift */,
+				500F19BF1FE6901700C43834 /* RotaryWheelView.swift */,
+				500F19BC1FE6901700C43834 /* UIView+Trigonometry.swift */,
+				500F19BD1FE6901700C43834 /* WheelOption.swift */,
+				50C6C2E6213BE00300E1A9D3 /* Config */,
+			);
+			path = Rotary;
+			sourceTree = "<group>";
+		};
+		50A5F86320E7975700F70B1C /* DancerWheel-Shared */ = {
+			isa = PBXGroup;
+			children = (
+				50A5F86620E7975700F70B1C /* FontManager.swift */,
+				50A5F86720E7975700F70B1C /* NSMutableAttributedString+CustomStyling.swift */,
+				50A5F86820E7975700F70B1C /* OptionSelectorWheelView.swift */,
+				50A5F86920E7975700F70B1C /* ColourManager.swift */,
+				50A5F86A20E7975700F70B1C /* Dancer.swift */,
+			);
+			path = "DancerWheel-Shared";
+			sourceTree = "<group>";
+		};
+		50A5F86B20E7975700F70B1C /* DancerWheel-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				50A5F87820E7975700F70B1C /* AppDelegate.swift */,
+				50A5F87920E7975700F70B1C /* DancersViewController.swift */,
+				50A5F87A20E7975700F70B1C /* NavigationController.swift */,
+				50A5F86C20E7975700F70B1C /* OptionSelectorWheelView.xib */,
+				50A5F86D20E7975700F70B1C /* Assets.xcassets */,
+				50A5F87420E7975700F70B1C /* LaunchScreen.storyboard */,
+				50A5F87620E7975700F70B1C /* Main.storyboard */,
+			);
+			path = "DancerWheel-iOS";
+			sourceTree = "<group>";
+		};
+		50A5F87C20E7975700F70B1C /* DancerWheel-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				50A5F88020E7975700F70B1C /* AppDelegate.swift */,
+				50A5F88120E7975700F70B1C /* DancersViewController.swift */,
+				50A5F87D20E7975700F70B1C /* Assets.xcassets */,
+				50A5F87E20E7975700F70B1C /* Main.storyboard */,
+			);
+			path = "DancerWheel-tvOS";
+			sourceTree = "<group>";
+		};
+		50A5F8A220E7980800F70B1C /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				50A5F86B20E7975700F70B1C /* DancerWheel-iOS */,
+				50A5F87C20E7975700F70B1C /* DancerWheel-tvOS */,
+				50A5F86320E7975700F70B1C /* DancerWheel-Shared */,
+				50C6C2E7213BE03D00E1A9D3 /* Config */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		50C6C2E6213BE00300E1A9D3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				500F19B11FE68FCE00C43834 /* Info-iOS.plist */,
+				500C6CA51FEBD0C4009A074B /* Info-tvOS.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		50C6C2E7213BE03D00E1A9D3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				50A5F87B20E7975700F70B1C /* Info-iOS.plist */,
+				50A5F88220E7975700F70B1C /* Info-tvOS.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		500C6C9F1FEBD0C4009A074B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F19AA1FE68FCE00C43834 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		500C6CA11FEBD0C4009A074B /* Rotary-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500C6CA71FEBD0C4009A074B /* Build configuration list for PBXNativeTarget "Rotary-tvOS" */;
+			buildPhases = (
+				500C6C9D1FEBD0C4009A074B /* Sources */,
+				500C6C9E1FEBD0C4009A074B /* Frameworks */,
+				500C6C9F1FEBD0C4009A074B /* Headers */,
+				500C6CA01FEBD0C4009A074B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rotary-tvOS";
+			productName = "Rotary-tvOS";
+			productReference = 500C6CA21FEBD0C4009A074B /* Rotary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		500F19AC1FE68FCE00C43834 /* Rotary-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500F19B51FE68FCE00C43834 /* Build configuration list for PBXNativeTarget "Rotary-iOS" */;
+			buildPhases = (
+				500F19A81FE68FCE00C43834 /* Sources */,
+				500F19A91FE68FCE00C43834 /* Frameworks */,
+				500F19AA1FE68FCE00C43834 /* Headers */,
+				500F19AB1FE68FCE00C43834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rotary-iOS";
+			productName = Rotary;
+			productReference = 500F19AD1FE68FCE00C43834 /* Rotary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50A5F83A20E796A100F70B1C /* DancerWheel-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A5F84C20E796A100F70B1C /* Build configuration list for PBXNativeTarget "DancerWheel-iOS" */;
+			buildPhases = (
+				50A5F83720E796A100F70B1C /* Sources */,
+				50A5F83820E796A100F70B1C /* Frameworks */,
+				50A5F83920E796A100F70B1C /* Resources */,
+				50A5F89C20E797B600F70B1C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50A5F89B20E797B600F70B1C /* PBXTargetDependency */,
+			);
+			name = "DancerWheel-iOS";
+			productName = "DancerWheel-iOS";
+			productReference = 50A5F83B20E796A100F70B1C /* DancerWheel-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50A5F85020E796B800F70B1C /* DancerWheel-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A5F85D20E796B900F70B1C /* Build configuration list for PBXNativeTarget "DancerWheel-tvOS" */;
+			buildPhases = (
+				50A5F84D20E796B800F70B1C /* Sources */,
+				50A5F84E20E796B800F70B1C /* Frameworks */,
+				50A5F84F20E796B800F70B1C /* Resources */,
+				50A5F8A120E797BB00F70B1C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50A5F8A020E797BB00F70B1C /* PBXTargetDependency */,
+			);
+			name = "DancerWheel-tvOS";
+			productName = "DancerWheel-tvOS";
+			productReference = 50A5F85120E796B800F70B1C /* DancerWheel-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		500F19A41FE68FCE00C43834 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Robert Nash";
+				TargetAttributes = {
+					500C6CA11FEBD0C4009A074B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					500F19AC1FE68FCE00C43834 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					50A5F83A20E796A100F70B1C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					50A5F85020E796B800F70B1C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 500F19A71FE68FCE00C43834 /* Build configuration list for PBXProject "Rotary" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 500F19A31FE68FCE00C43834;
+			productRefGroup = 500F19AE1FE68FCE00C43834 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500F19AC1FE68FCE00C43834 /* Rotary-iOS */,
+				500C6CA11FEBD0C4009A074B /* Rotary-tvOS */,
+				50A5F83A20E796A100F70B1C /* DancerWheel-iOS */,
+				50A5F85020E796B800F70B1C /* DancerWheel-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		500C6CA01FEBD0C4009A074B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F19AB1FE68FCE00C43834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F83920E796A100F70B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F88620E7977300F70B1C /* LaunchScreen.storyboard in Resources */,
+				50A5F88820E7977C00F70B1C /* OptionSelectorWheelView.xib in Resources */,
+				50A5F88920E7977C00F70B1C /* Assets.xcassets in Resources */,
+				50A5F88720E7977700F70B1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F84F20E796B800F70B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F88D20E7979500F70B1C /* Assets.xcassets in Resources */,
+				50A5F88C20E7979200F70B1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		500C6C9D1FEBD0C4009A074B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A515C21FEBF180007741CB /* RotaryWheelTrack.swift in Sources */,
+				50A515BF1FEBF180007741CB /* RotaryWheelControl.swift in Sources */,
+				50A515C51FEBF180007741CB /* WheelOption.swift in Sources */,
+				50A515C01FEBF180007741CB /* RotaryWheelSector.swift in Sources */,
+				50A515C31FEBF180007741CB /* RotaryWheelView.swift in Sources */,
+				50A515BE1FEBF180007741CB /* CGPoint+Trigonometry.swift in Sources */,
+				50A515C41FEBF180007741CB /* UIView+Trigonometry.swift in Sources */,
+				50A515C11FEBF180007741CB /* RotaryWheelStyling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F19A81FE68FCE00C43834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F19C01FE6901800C43834 /* RotaryWheelTrack.swift in Sources */,
+				500F19C71FE6901800C43834 /* RotaryWheelView.swift in Sources */,
+				500F19C11FE6901800C43834 /* RotaryWheelStyling.swift in Sources */,
+				500F19C61FE6901800C43834 /* RotaryWheelSector.swift in Sources */,
+				500F19C41FE6901800C43834 /* UIView+Trigonometry.swift in Sources */,
+				500F19C31FE6901800C43834 /* RotaryWheelControl.swift in Sources */,
+				500F19C51FE6901800C43834 /* WheelOption.swift in Sources */,
+				500F19C21FE6901800C43834 /* CGPoint+Trigonometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F83720E796A100F70B1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F89020E7979B00F70B1C /* OptionSelectorWheelView.swift in Sources */,
+				50A5F88320E7976D00F70B1C /* AppDelegate.swift in Sources */,
+				50A5F88520E7976D00F70B1C /* NavigationController.swift in Sources */,
+				50A5F88E20E7979B00F70B1C /* FontManager.swift in Sources */,
+				50A5F89220E7979B00F70B1C /* Dancer.swift in Sources */,
+				50A5F88420E7976D00F70B1C /* DancersViewController.swift in Sources */,
+				50A5F88F20E7979B00F70B1C /* NSMutableAttributedString+CustomStyling.swift in Sources */,
+				50A5F89120E7979B00F70B1C /* ColourManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5F84D20E796B800F70B1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A5F89520E7979B00F70B1C /* OptionSelectorWheelView.swift in Sources */,
+				50A5F89720E7979B00F70B1C /* Dancer.swift in Sources */,
+				50A5F88A20E7978F00F70B1C /* AppDelegate.swift in Sources */,
+				50A5F89320E7979B00F70B1C /* FontManager.swift in Sources */,
+				50A5F89420E7979B00F70B1C /* NSMutableAttributedString+CustomStyling.swift in Sources */,
+				50A5F88B20E7978F00F70B1C /* DancersViewController.swift in Sources */,
+				50A5F89620E7979B00F70B1C /* ColourManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50A5F89B20E797B600F70B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500F19AC1FE68FCE00C43834 /* Rotary-iOS */;
+			targetProxy = 50A5F89A20E797B600F70B1C /* PBXContainerItemProxy */;
+		};
+		50A5F8A020E797BB00F70B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500C6CA11FEBD0C4009A074B /* Rotary-tvOS */;
+			targetProxy = 50A5F89F20E797BB00F70B1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50A5F87420E7975700F70B1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A5F87520E7975700F70B1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50A5F87620E7975700F70B1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A5F87720E7975700F70B1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50A5F87E20E7975700F70B1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A5F87F20E7975700F70B1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		500C6CA81FEBD0C4009A074B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Rotary/Config/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.Rotary-tvOS";
+				PRODUCT_NAME = Rotary;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		500C6CA91FEBD0C4009A074B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Rotary/Config/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.Rotary-tvOS";
+				PRODUCT_NAME = Rotary;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		500F19B31FE68FCE00C43834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		500F19B41FE68FCE00C43834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		500F19B61FE68FCE00C43834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Rotary/Config/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.Rotary-iOS";
+				PRODUCT_NAME = Rotary;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		500F19B71FE68FCE00C43834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Rotary/Config/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.Rotary-iOS";
+				PRODUCT_NAME = Rotary;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50A5F84A20E796A100F70B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Apps/Config/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.DancerWheel-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50A5F84B20E796A100F70B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Apps/Config/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.DancerWheel-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50A5F85E20E796B900F70B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Apps/Config/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.DancerWheel-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		50A5F85F20E796B900F70B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Apps/Config/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertnash.DancerWheel-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		500C6CA71FEBD0C4009A074B /* Build configuration list for PBXNativeTarget "Rotary-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500C6CA81FEBD0C4009A074B /* Debug */,
+				500C6CA91FEBD0C4009A074B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500F19A71FE68FCE00C43834 /* Build configuration list for PBXProject "Rotary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500F19B31FE68FCE00C43834 /* Debug */,
+				500F19B41FE68FCE00C43834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500F19B51FE68FCE00C43834 /* Build configuration list for PBXNativeTarget "Rotary-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500F19B61FE68FCE00C43834 /* Debug */,
+				500F19B71FE68FCE00C43834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A5F84C20E796A100F70B1C /* Build configuration list for PBXNativeTarget "DancerWheel-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A5F84A20E796A100F70B1C /* Debug */,
+				50A5F84B20E796A100F70B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A5F85D20E796B900F70B1C /* Build configuration list for PBXNativeTarget "DancerWheel-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A5F85E20E796B900F70B1C /* Debug */,
+				50A5F85F20E796B900F70B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 500F19A41FE68FCE00C43834 /* Project object */;
+}

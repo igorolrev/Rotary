@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6sZ-nW-7TT" userLabel="OptionSelectorWheelView" customClass="OptionSelectorWheelView" customModule="DancerWheel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-Nj-HPD" userLabel="Barrier">
+                    <rect key="frame" x="0.0" y="0.0" width="56.5" height="400"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlk-iH-R5O" userLabel="Top">
+                            <rect key="frame" x="0.0" y="0.0" width="56.5" height="198"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Hg-vN-TKu" userLabel="SelectionBar">
+                            <rect key="frame" x="0.0" y="198" width="46.5" height="4"/>
+                            <color key="backgroundColor" red="0.87806977210000003" green="0.1079241071" blue="0.54601387499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="M0U-cN-5cW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DL-ag-gyj" userLabel="Bottom">
+                            <rect key="frame" x="0.0" y="202" width="56.5" height="198"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0Hg-vN-TKu" firstAttribute="top" secondItem="dlk-iH-R5O" secondAttribute="bottom" id="3Xy-qp-KSb"/>
+                        <constraint firstItem="9DL-ag-gyj" firstAttribute="top" secondItem="0Hg-vN-TKu" secondAttribute="bottom" id="Bgq-Hc-NDy"/>
+                        <constraint firstItem="9DL-ag-gyj" firstAttribute="leading" secondItem="dFU-Nj-HPD" secondAttribute="leading" id="NYS-XK-mPA"/>
+                        <constraint firstAttribute="trailing" secondItem="9DL-ag-gyj" secondAttribute="trailing" id="OWt-cI-VLr"/>
+                        <constraint firstAttribute="trailing" secondItem="0Hg-vN-TKu" secondAttribute="trailing" constant="10" id="SVL-Rh-ai2"/>
+                        <constraint firstAttribute="trailing" secondItem="dlk-iH-R5O" secondAttribute="trailing" id="SyL-gS-3FI"/>
+                        <constraint firstItem="dlk-iH-R5O" firstAttribute="top" secondItem="dFU-Nj-HPD" secondAttribute="top" id="Tq1-rc-HSv"/>
+                        <constraint firstItem="0Hg-vN-TKu" firstAttribute="leading" secondItem="dFU-Nj-HPD" secondAttribute="leading" id="jFd-2V-KWP"/>
+                        <constraint firstItem="0Hg-vN-TKu" firstAttribute="centerY" secondItem="dFU-Nj-HPD" secondAttribute="centerY" id="nJM-pl-Akg"/>
+                        <constraint firstAttribute="bottom" secondItem="9DL-ag-gyj" secondAttribute="bottom" id="w1C-of-Mqf"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56.5" id="xfX-xn-BXd"/>
+                        <constraint firstItem="dlk-iH-R5O" firstAttribute="leading" secondItem="dFU-Nj-HPD" secondAttribute="leading" id="xyv-vH-e0q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ags-EG-Ian" userLabel="WheelContainer">
+                    <rect key="frame" x="56.5" y="1.5" width="398.5" height="398.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ags-EG-Ian" secondAttribute="height" multiplier="1:1" id="7Qp-0Q-Bja"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ags-EG-Ian" secondAttribute="bottom" id="0jl-Hn-OMZ"/>
+                <constraint firstItem="dFU-Nj-HPD" firstAttribute="top" secondItem="6sZ-nW-7TT" secondAttribute="top" id="AiF-Zj-697"/>
+                <constraint firstItem="Ags-EG-Ian" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dFU-Nj-HPD" secondAttribute="trailing" id="HPS-lY-WJp"/>
+                <constraint firstItem="dFU-Nj-HPD" firstAttribute="leading" secondItem="6sZ-nW-7TT" secondAttribute="leading" id="Oyw-TL-98S"/>
+                <constraint firstItem="Ags-EG-Ian" firstAttribute="top" secondItem="6sZ-nW-7TT" secondAttribute="top" priority="999" id="WIT-Of-CLE"/>
+                <constraint firstAttribute="bottom" secondItem="dFU-Nj-HPD" secondAttribute="bottom" id="XE0-PQ-Qu0"/>
+                <constraint firstItem="Ags-EG-Ian" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6sZ-nW-7TT" secondAttribute="top" id="ZFN-V3-r2F"/>
+                <constraint firstItem="Ags-EG-Ian" firstAttribute="centerY" secondItem="6sZ-nW-7TT" secondAttribute="centerY" id="sKQ-Dm-cJp"/>
+                <constraint firstAttribute="bottom" secondItem="Ags-EG-Ian" secondAttribute="bottom" priority="999" id="vSk-ct-JG0"/>
+                <constraint firstItem="Ags-EG-Ian" firstAttribute="centerX" secondItem="6sZ-nW-7TT" secondAttribute="centerX" priority="999" id="w5W-aN-9Ed"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selectionBar" destination="0Hg-vN-TKu" id="tDu-5M-1lc"/>
+                <outlet property="wheelContainer" destination="Ags-EG-Ian" id="zlS-59-7k5"/>
+            </connections>
+            <point key="canvasLocation" x="-558" y="-75"/>
+        </view>
+    </objects>
+</document>
