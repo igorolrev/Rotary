@@ -45,7 +45,7 @@ wheelControl.styling = RotaryWheelStyling(
 view.addSubview(wheelControl)
 ```
 
-The closure 'rotationEnded' is called immediately after layout. If you do not want this behaviour, call layout before you assign the closure.
+> The closure 'rotationEnded' is called immediately after layout. If you do not want this behaviour, call layout before you assign the closure.
 
 # Demo
 
