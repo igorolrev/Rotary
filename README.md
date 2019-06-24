@@ -55,7 +55,7 @@ view.addSubview(wheelControl)
 Tap the following image to launch [Appetize](https://appetize.io).
 
 <p align="center">
-    <a href="">
+    <a href="https://appetize.io/app/udgkzhrukbwe3umq7x17h4zpjw?device=iphonex&scale=75&orientation=portrait&osVersion=12.2&deviceColor=black">
         <img src="https://user-images.githubusercontent.com/51816980/59976306-660b8f00-95ba-11e9-89d6-1862f6ee78da.png" alt="Preview"/>
     </a>
 </p>
